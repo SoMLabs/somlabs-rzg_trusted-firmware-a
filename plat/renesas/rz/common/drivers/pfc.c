@@ -93,6 +93,15 @@ static PFC_REGS pfc_mux_reg_tbl[PFC_MUX_TBL_NUM] = {
 		{ PFC_OFF, (uintptr_t)PFC_SR36,   0x0000000000000101 },		/* SR */
 		{ PFC_OFF, (uintptr_t)NULL,       0 }				/* IEN */
 	},
+	/* P39(scif0) */
+	{
+		{ PFC_ON,  (uintptr_t)PFC_PMC37,  0x07 },			/* PMC */
+		{ PFC_ON,  (uintptr_t)PFC_PFC37,  0x00000111 },			/* PFC */
+		{ PFC_OFF, (uintptr_t)PFC_IOLH37, 0x0000000000010101 },		/* IOLH */
+		{ PFC_OFF, (uintptr_t)PFC_PUPD37, 0x0000000000000000 },		/* PUPD */
+		{ PFC_OFF, (uintptr_t)PFC_SR37,   0x0000000000010101 },		/* SR */
+		{ PFC_OFF, (uintptr_t)NULL,       0 }				/* IEN */
+	}
 #endif
 };
 
